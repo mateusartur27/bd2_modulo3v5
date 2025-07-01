@@ -80,31 +80,31 @@ db.clientes.insertMany([{
 // fornecedores
 use('gestao_financeira');
 db.fornecedores.insertMany([{
-    _id: '1',
+    _id: 1,
     nome: 'Fornecedor1',
     cnpj: '11.111.111/0001-11',
     telefone: '37 3225-1111',
     data_cadastro: '2025-01-23' 
 }, {
-    _id: '2',
+    _id: 2,
     nome: 'Fornecedor2',
     cnpj: '22.222.222/0001-22',
     telefone: '37 3225-2222',
     data_cadastro: '2025-02-10' 
 }, {
-    _id: '3',
+    _id: 3,
     nome: 'Fornecedor3',
     cnpj: '33.333.333/0001-33',
     telefone: '37 3225-3333',
     data_cadastro: '2025-03-12' 
 }, {
-    _id: '4',
+    _id: 4,
     nome: 'Fornecedor4',
     cnpj: '44.444.444/0001-44',
     telefone: '37 4225-4444',
     data_cadastro: '2025-04-15' 
 }, {
-    _id: '5',
+    _id: 5,
     nome: 'Fornecedor5',
     cnpj: '55.555.555/0001-55',
     telefone: '37 5225-5555',
@@ -115,36 +115,36 @@ db.fornecedores.insertMany([{
 // contas_receber
 use('gestao_financeira');
 db.contas_receber.insertMany([{
-    _id: '1',
-    cliente_id: '1',
+    _id: 1,
+    cliente_id: 1,
     data_lancamento: '2025-01-02',
     data_vencimento: '2025-02-02',
     valor: 100.00,
     status: 'aberto'
 }, {
-    _id: '2',
-    cliente_id: '2',
+    _id: 2,
+    cliente_id: 2,
     data_lancamento: '2025-02-08',
     data_vencimento: '2025-03-08',
     valor: 200.00,
     status: 'aberto'
 }, {
-    _id: '3',
-    cliente_id: '3',
+    _id: 3,
+    cliente_id: 3,
     data_lancamento: '2025-06-02',
     data_vencimento: '2025-07-02',
     valor: 300.00,
     status: 'aberto'
 }, {
-    _id: '4',
-    cliente_id: '4',
+    _id: 4,
+    cliente_id: 4,
     data_lancamento: '2025-06-05',
     data_vencimento: '2025-07-05',
     valor: 400.00,
     status: 'aberto'
 }, {
-    _id: '5',
-    cliente_id: '5',
+    _id: 5,
+    cliente_id: 5,
     data_lancamento: '2025-06-07',
     data_vencimento: '2025-07-07',
     valor: 500.00,
@@ -155,51 +155,51 @@ db.contas_receber.insertMany([{
 // contas_pagar
 use('gestao_financeira');
 db.contas_pagar.insertMany([{
-    _id: '1',
-    fornecedor_id: '1',
+    _id: 1,
+    fornecedor_id: 1,
     data_lancamento: '2025-01-10',
     data_vencimento: '2025-02-10',
     valor: 100.00,
     status: 'aberto'
   }, {
-    _id: '2',
-    fornecedor_id: '2',
+    _id: 2,
+    fornecedor_id: 2,
     data_lancamento: '2025-02-15',
     data_vencimento: '2025-03-15',
     valor: 200.00,
     status: 'aberto'
   }, {
-    _id: '3',
-    fornecedor_id: '3',
+    _id: 3,
+    fornecedor_id: 3,
     data_lancamento: '2025-03-20',
     data_vencimento: '2025-04-20',
     valor: 300.00,
     status: 'aberto'
   }, {
-    _id: '4',
-    fornecedor_id: '4',
+    _id: 4,
+    fornecedor_id: 4,
     data_lancamento: '2025-04-25',
     data_vencimento: '2025-05-25',
     valor: 400.00,
     status: 'aberto'
   }, {
-    _id: '5',
-    fornecedor_id: '5',
+    _id: 5,
+    fornecedor_id: 5,
     data_lancamento: '2025-05-30',
     data_vencimento: '2025-06-30',
     valor: 500.00,
     status: 'aberto'
   }, {
-    _id: '6',
-    fornecedor_id: '1',
+    _id: 6,
+    fornecedor_id: 1,
     data_lancamento: '2025-06-20',
     data_vencimento: '2025-07-20',
     valor: 600.00,
     status: 'aberto'
   },
   {
-    _id: '7',
-    fornecedor_id: '2',
+    _id: 7,
+    fornecedor_id: 2,
     data_lancamento: '2025-06-25',
     data_vencimento: '2025-07-25',
     valor: 700.00,
@@ -238,7 +238,7 @@ db.contas_receber.find();
 
 use('gestao_financeira');
 db.contas_receber.updateOne({
-    _id: '1'
+    _id: 1
 }, {
     $set: {
         status: 'pago',
@@ -252,7 +252,7 @@ db.contas_receber.updateOne({
 
 use('gestao_financeira');
 db.contas_receber.updateOne({
-    _id: '2'
+    _id: 2
 }, {
     $set: {
         status: 'pago',
